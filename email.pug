@@ -1,0 +1,11 @@
+extend components/plantilla.pug
+block content
+    main.login
+        .form-container.email-container 
+            +sectionTitle("Email has been sent!","Plase check your inbox for instructions on how to reset the password")   
+            .email-image
+                img(src="../icons/email.svg", alt="email", srcset="")
+            button.primary-button Login
+            p.resend
+                span Didn't receive the email 
+                a(href="/") resend

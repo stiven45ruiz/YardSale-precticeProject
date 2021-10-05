@@ -1,0 +1,58 @@
+.email-container{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
+    justify-items: center;
+}
+.email-image{
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    background-color: $Text-input-field;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+    img{
+        width: 80px;
+    }
+    
+}
+.resend{
+    font-size: $sm;
+    span{
+        color: $Very-light-pink;
+    }
+    a{
+        color: $Hospital-green;
+    }
+}
+.logo{
+    width: 150px;
+    margin-bottom: 48px;
+    justify-self: center;
+    opacity: 0;
+}
+
+.primary-button{
+    background: $Hospital-green;
+    border-radius: 8px;
+    border: none;
+    color: $White;
+    width: 100%;
+    cursor: pointer;
+    font-size: $md;
+    font-weight: bold;
+    height: 50px;
+}
+.secondary-button{
+    background: $White;
+    border-radius: 8px;
+    border: 1px solid $Hospital-green;
+    color: $Hospital-green;
+    width: 100%;
+    cursor: pointer;
+    font-size: $md;
+    font-weight: bold;
+    height: 50px;
+}

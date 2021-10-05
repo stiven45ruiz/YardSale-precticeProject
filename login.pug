@@ -1,0 +1,16 @@
+extend components/plantilla.pug
+block content
+    main.login
+        .form-container.email-container 
+            +sectionTitle("Create a new password","enter a new password for your account") 
+
+            form.form(action="/")
+                label.label(for="email") Email
+                input.input.input-email(type="text" id="email" placeholder="example@example.com")
+
+                label.label(for="password") Password
+                input.input.input-password(type="password" id="password" placeholder="*********")
+
+                input.primary-button.login-button(type="submit" value="Confirm")
+                a(href="/") Forgot my password
+            button.secondary-button.singup.button Sing up

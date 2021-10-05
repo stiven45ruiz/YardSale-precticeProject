@@ -1,0 +1,21 @@
+$Very-light-pink: #C7C7C7;
+$Text-input-field: #F7F7F7;
+$Hospital-green: #ACD9B2;
+$White: #FFFFFF;
+$Black: #000000;
+$Dark: #232830;
+$sm: 1.4rem;
+$md: 1.6rem;
+$lg: 1.8rem;
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap');
+
+html{
+    font-size: 62.5%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
