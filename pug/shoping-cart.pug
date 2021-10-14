@@ -1,0 +1,16 @@
+extend components/plantilla.pug
+block content
+    aside.product-detail 
+            .title-container
+                img(src="../../icons/flechita.svg", alt="", srcset="")
+                p.title
+            div.my-order-content
+                +order-product("https://images.pexels.com/photos/1149601/pexels-photo-1149601.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260", "Bike", "$300.00")
+                +order-product("https://images.pexels.com/photos/1149601/pexels-photo-1149601.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260", "Bike", "$300.00")
+                +order-product("https://images.pexels.com/photos/1149601/pexels-photo-1149601.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260", "Bike", "$300.00")
+                +order-product("https://images.pexels.com/photos/1149601/pexels-photo-1149601.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260", "Bike", "$300.00")
+                div.order
+                    p   
+                        span Total 
+                    p $560.00
+                    button.primary-button Checkout 

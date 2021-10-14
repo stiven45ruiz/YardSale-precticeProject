@@ -1,0 +1,13 @@
+extend components/plantilla.pug
+block content
+    main.my-order 
+        .my-order-container 
+            h1.title My Order
+            .my-order-content 
+                div.order
+                    p.lft
+                        span 04.25.21
+                        span 6 articles   
+                    p $560.00
+                +order-product("https://images.pexels.com/photos/1149601/pexels-photo-1149601.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260", "Bike", "$300.00")
+                +order-product("https://images.pexels.com/photos/1149601/pexels-photo-1149601.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260", "Bike", "$300.00")

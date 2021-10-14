@@ -5,4 +5,32 @@
     .secondary-button{
         margin-top: 60px;
     }
+
+    .cardscontainer{
+        grid-template-columns: repeat(auto-fill, 140px);
+        .product-card{
+            width: 140px;
+            img{
+                width: 140px;
+                height: 140px;
+            }
+        }
+    }
+    .menu{
+        display: block;
+    }
+    .navbar-left{
+        ul{
+            display: none;
+        }
+    }
+    .navbar-right{
+        .navbar-email{
+            display: none;
+        }
+    }
+
+    .product-detail{
+        width: 100%;
+    }
 }

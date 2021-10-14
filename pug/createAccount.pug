@@ -1,0 +1,16 @@
+extend components/plantilla.pug
+block content
+    main.login
+        .form-container 
+            h1.title.account My Account
+            form.form(action="/")
+                label.label(for="name") Name
+                input.input.input-name(type="text" id="name" placeholder="Stiven")
+
+                label.label(for="email") Email
+                input.input.input-email(type="email" id="email" placeholder="Stiven@example.com")
+                
+                label.label(for="new-password") Password
+                input.input.input-password(type="password" id="new-password" placeholder="*********")
+
+                input.primary-button.login-button(type="submit" value="Create")

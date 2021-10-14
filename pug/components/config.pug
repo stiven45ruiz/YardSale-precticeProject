@@ -1,0 +1,74 @@
+//variables
+
+//MIXINS
+
+mixin sectionTitle(title,subtitle)
+    img.logo(src="../logos/logo_yard_sale.svg", alt="logo", srcset="")
+    h1.title= title
+    p.subtitle= subtitle
+
+mixin cards(price,product,image)
+    .product-card
+        img(src=image, alt="", srcset="")
+        .product-info
+            div
+                p= price 
+                p= product 
+            figue.icon-buy
+                img(src="./icons/bt_added_to_cart.svg", alt="", srcset="")
+
+mixin desktop-menu()
+    .desktop-menu 
+        ul 
+            li
+                a.title(href="/") My Orders
+            li
+                a(href="/") My Account
+            li
+                a(href="/") Sign out
+
+mixin movile-menu()
+    .movile-menu 
+        ul 
+            li
+                a(href="/")
+            li
+                a(href="/") All
+            li
+                a(href="/") Clothes
+            li
+                a(href="/") Electronics
+            li
+                a(href="/") Furnitures
+            li
+                a(href="/") Toys
+            li
+                a(href="/") Others
+        
+        ul
+            li
+                a(href="/icons") My orders
+            li
+                a(href="/icons") My account
+
+        ul
+            li
+                a.email(href="/") platzi@example.com
+            li
+                a.sing-out(href="/") Sign out
+
+mixin order-product(image,aticle,price)
+    .shopping-cart
+        figure
+            img(src=image, alt="", srcset="")
+        p= aticle 
+        p= price
+
+mixin orders(date,articles,price)
+    .my-orders-content 
+        div.orders
+            p.lft
+                span= date
+                span= articles   
+            p= price
+            img(src="./icons/flechita.svg", alt="arrow")
